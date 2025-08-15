@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asbin Karki - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="assets/images/favicon.png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Asbin<span>_Sec</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="theme-toggle" id="themeToggle">🌓</div>
+    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="projects-hero">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">Welcome, I'm</span>
+        <span class="title-line highlight">Asbin Karki</span>
+      </h1>
+      <p class="hero-subtitle">Full-Stack Developer | AI/ML Enthusiast | Cybersecurity Specialist | Freelancer</p>
+      <div class="hero-stats">
+        <div class="stat-item" data-count="15">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item" data-count="8">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Technologies Used</span>
+        </div>
+        <div class="stat-item" data-count="3">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+      <div class="hero-buttons" style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="projects.html" class="btn btn-primary">
+          <i class="fas fa-rocket"></i>
+          View Projects
+        </a>
+        <a href="contact.html" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="projects-section" id="about">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fas fa-user"></i>
+        About Me
+      </h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Full-Stack Development</h3>
+            <p>Passionate about creating innovative web applications using modern technologies. Experienced in both frontend and backend development with a focus on user experience and performance.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>AI & Machine Learning</h3>
+            <p>Specialized in developing intelligent systems and applications using cutting-edge AI/ML technologies. From chatbots to predictive analytics, I bring AI solutions to life.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Cybersecurity</h3>
+            <p>Dedicated to protecting digital assets and ensuring secure applications. Experienced in penetration testing, security auditing, and implementing robust security measures.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Penetration Testing</span>
+              <span class="tech-tag">Security Auditing</span>
+              <span class="tech-tag">Network Security</span>
+              <span class="tech-tag">OWASP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="photo-gallery">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fas fa-cogs"></i>
+        Services I Offer
+      </h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="showServiceDetails('Web Development')">
+          <img src="assets/images/projects/gallery1.png" alt="Web Development" />
+          <div class="gallery-overlay">
+            <i class="fas fa-globe"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="showServiceDetails('AI/ML Solutions')">
+          <img src="assets/images/projects/gallery2.png" alt="AI/ML Solutions" />
+          <div class="gallery-overlay">
+            <i class="fas fa-robot"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="showServiceDetails('Cybersecurity')">
+          <img src="assets/images/projects/gallery3.png" alt="Cybersecurity" />
+          <div class="gallery-overlay">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="showServiceDetails('Automation Tools')">
+          <img src="assets/images/projects/gallery4.png" alt="Automation Tools" />
+          <div class="gallery-overlay">
+            <i class="fas fa-tools"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section class="projects-section">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fas fa-link"></i>
+        Quick Navigation
+      </h2>
+      <div class="project-grid">
+        <a href="projects.html" class="project-card" style="text-decoration: none;">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Projects Portfolio</h3>
+            <p>Explore my latest projects, from web applications to AI solutions and security tools.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">View All</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="research.html" class="project-card" style="text-decoration: none;">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Research Work</h3>
+            <p>Discover my research contributions in AI, cybersecurity, and emerging technologies.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Learn More</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="freelance.html" class="project-card" style="text-decoration: none;">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Freelance Services</h3>
+            <p>Professional services for businesses and individuals. Let's bring your ideas to life.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Get Quote</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="tools.html" class="project-card" style="text-decoration: none;">
+          <div class="card-header">
+            <div class="project-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Development Tools</h3>
+            <p>Access useful tools and utilities I've created for developers and businesses.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Try Tools</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="photo-gallery">
+    <div class="container">
+      <div style="text-align: center; padding: 4rem 0;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: #ffffff;">
+          Ready to Start a Project?
+        </h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #8b949e;">
+          Let's discuss how I can help bring your ideas to life
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            Get In Touch
+          </a>
+          <a href="freelance.html" class="btn btn-secondary">
+            <i class="fas fa-briefcase"></i>
+            View Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Modal -->
+  <div class="modal" id="serviceModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="serviceModalTitle">Service Details</h3>
+        <button class="modal-close" id="serviceModalClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-info">
+          <div class="info-section">
+            <h4>Description</h4>
+            <p id="serviceModalDescription"></p>
+          </div>
+          <div class="info-section">
+            <h4>Features</h4>
+            <ul id="serviceModalFeatures"></ul>
+          </div>
+          <div class="info-section">
+            <h4>Technologies</h4>
+            <div id="serviceModalTech" class="tech-stack"></div>
+          </div>
+          <div class="info-section">
+            <h4>Next Steps</h4>
+            <div class="project-links">
+              <a href="contact.html" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+                Get Quote
+              </a>
+              <a href="freelance.html" class="btn btn-secondary">
+                <i class="fas fa-info-circle"></i>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Animation -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script>
+    // Home page specific functionality
+    function showServiceDetails(service) {
+      const modal = document.getElementById('serviceModal');
+      const modalTitle = document.getElementById('serviceModalTitle');
+      const modalDescription = document.getElementById('serviceModalDescription');
+      const modalFeatures = document.getElementById('serviceModalFeatures');
+      const modalTech = document.getElementById('serviceModalTech');
+      
+      const serviceDetails = {
+        'Web Development': {
+          description: 'Full-stack web development services including frontend, backend, and database design. I create responsive, scalable, and user-friendly web applications.',
+          features: [
+            'Responsive web design',
+            'Frontend development (React, Vue, Angular)',
+            'Backend development (Node.js, Python, PHP)',
+            'Database design and optimization',
+            'API development and integration',
+            'Performance optimization'
+          ],
+          tech: ['React', 'Node.js', 'Python', 'MongoDB', 'MySQL', 'AWS']
+        },
+        'AI/ML Solutions': {
+          description: 'Custom AI and machine learning solutions to automate processes, analyze data, and create intelligent applications.',
+          features: [
+            'Custom AI model development',
+            'Natural language processing',
+            'Computer vision applications',
+            'Predictive analytics',
+            'Chatbot development',
+            'Data analysis and visualization'
+          ],
+          tech: ['TensorFlow', 'PyTorch', 'OpenAI API', 'Python', 'Scikit-learn', 'NLP']
+        },
+        'Cybersecurity': {
+          description: 'Comprehensive cybersecurity services to protect your digital assets and ensure secure applications.',
+          features: [
+            'Security audits and assessments',
+            'Penetration testing',
+            'Vulnerability scanning',
+            'Security consulting',
+            'Incident response',
+            'Security training'
+          ],
+          tech: ['OWASP', 'Nmap', 'Metasploit', 'Burp Suite', 'Security Tools']
+        },
+        'Automation Tools': {
+          description: 'Custom automation tools and scripts to streamline business processes and improve efficiency.',
+          features: [
+            'Process automation',
+            'Data processing tools',
+            'Web scraping solutions',
+            'Excel automation',
+            'API integrations',
+            'Custom scripts'
+          ],
+          tech: ['Python', 'Selenium', 'BeautifulSoup', 'Pandas', 'Automation']
+        }
+      };
+      
+      const details = serviceDetails[service];
+      modalTitle.textContent = service;
+      modalDescription.textContent = details.description;
+      
+      modalFeatures.innerHTML = '';
+      details.features.forEach(feature => {
+        const li = document.createElement('li');
+        li.textContent = feature;
+        modalFeatures.appendChild(li);
+      });
+      
+      modalTech.innerHTML = '';
+      details.tech.forEach(tech => {
+        const tag = document.createElement('span');
+        tag.className = 'tech-tag';
+        tag.textContent = tech;
+        modalTech.appendChild(tag);
+      });
+      
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    // Initialize service modal
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceModal = document.getElementById('serviceModal');
+      const serviceModalClose = document.getElementById('serviceModalClose');
+      
+      serviceModalClose.addEventListener('click', () => {
+        serviceModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+      
+      serviceModal.addEventListener('click', (e) => {
+        if (e.target === serviceModal) {
+          serviceModal.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
